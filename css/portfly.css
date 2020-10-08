@@ -1,0 +1,91 @@
+/* 3.4 Portfolio section */
+
+.Portfolio-content{
+    overflow: hidden;
+}
+.Portfolio-item{
+    width: 30%;
+    float: left;
+    margin-bottom: 25px;
+    position: relative;
+    padding: 14px;
+}
+.Portfolio-item .layer-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.603);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+}
+.Portfolio-item:hover .layer-content{
+    opacity: 1;
+    visibility:visible;
+
+}
+.layer-content .layer-info {
+    position: absolute;
+ 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+}
+.layer-content .catagory{
+    color: var(--maincolor) ;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom:5px ;
+    position: relative;
+    top:10px;
+    opacity: 0;
+    
+transition: top 0.5s ,opacity 0.5s ;
+transition-delay: 0.5;
+}
+.layer-content-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color:  var(--whitecolor);
+    position: relative;
+    top:10px;
+    opacity: 0;
+    
+transition: top 0.5s ,opacity 0.5s ;
+   transition-delay: 0.4s;
+}
+.layer-content a{
+    color:  var(--whitecolor);
+    position: relative;
+    top:10px;
+    opacity: 0;
+    
+    transition: top 0.5s ,opacity 0.5s ;
+transition-delay: 0.3s;
+}
+.Portfolio-item:hover .layer-content .catagory,
+.Portfolio-item:hover .layer-content-title,
+.Portfolio-item:hover .layer-content a
+{
+top: 0;
+opacity: 1;
+
+}
+.layer-content a i{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--maincolor) ;
+    line-height: 40px;
+}
+
+.Portfolio-item.mg{
+    margin: 0 5%;
+}
+.Portfolio-item img{
+    width: 100%;
+}

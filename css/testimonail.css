@@ -1,0 +1,44 @@
+/* 3.9 testimonail section */
+.testimonail{
+    position: relative;
+}
+.testimonail{
+    background-image: url(../images/background/background3.webp);
+    position: relative;
+    background-size:cover;
+    background-attachment: fixed;
+    height: 400px;
+}
+.testimonail-content{
+    overflow: hidden;
+padding: 120px 0;
+width: 80%;
+margin: auto;
+}
+.testimonail-item{
+    width: 50%;
+    float: left;
+    color:  var(--whitecolor);
+}
+.testimonail-toplarye{
+    padding: 15px  2px 40px 102px;
+    position: relative;
+}
+.testimonail-toplarye img{
+position: absolute;
+top: 10px;
+left: 10px;
+border-radius: 50%;
+}
+.testimonail-toplarye h2{
+    margin-bottom: 5px;
+
+}
+.testimonail-toplarye span{
+
+    color: var(--maincolor) ;
+}
+.testimonail-desc{
+    line-height: 1.5;
+    font-size:14px ;
+}
